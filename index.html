@@ -102,17 +102,17 @@ header{
 
 /* ---- hero: short, loud, two taps ---- */
 .hero{position:relative;background:var(--black);color:#fff;padding:0;overflow:hidden}
-.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.38}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.82}
 .hero::after{
   content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,.72) 50%,#000 100%)
+  background:linear-gradient(180deg,rgba(0,0,0,.18) 0%,rgba(0,0,0,.42) 42%,rgba(0,0,0,.82) 78%,#000 100%)
 }
 .hero-in{position:relative;z-index:2;padding-top:64px;padding-bottom:46px}
 @media (min-width:900px){.hero-in{padding-top:120px;padding-bottom:96px;max-width:752px}}
-.hero h1{color:#fff;margin-bottom:.28em}
+.hero h1{color:#fff;margin-bottom:.28em;text-shadow:0 2px 24px rgba(0,0,0,.6)}
 .hero h1 em{display:block;color:var(--cyan);font-style:normal}
 .hero .kicker{
-  color:#fff;font-size:1.02rem;font-weight:600;letter-spacing:-.01em;margin:0 0 26px
+  color:#fff;font-size:1.02rem;font-weight:600;letter-spacing:-.01em;margin:0 0 26px;text-shadow:0 1px 14px rgba(0,0,0,.7)
 }
 .hero .kicker s{text-decoration:none;color:var(--blue)}
 .hero-cta{display:grid;gap:10px}
@@ -238,7 +238,7 @@ footer a{color:#c8ced6;text-decoration:none}
       <b>XPRESS <i>FOAM</i></b>
     </a>
     <nav class="nav-desk">
-      <a href="#industries">Industries</a>
+      <a href="#services">Services</a>
       <a href="#why">Why Us</a>
       <a href="#work">Our Plant</a>
       <a href="#quote">Contact</a>
@@ -254,7 +254,7 @@ footer a{color:#c8ced6;text-decoration:none}
 <section class="hero">
   <img class="hero-img" src="assets/foam-3.jpg" alt="" fetchpriority="high" width="1200" height="1200">
   <div class="wrap hero-in">
-    <span class="eyebrow" style="color:var(--cyan)">Hialeah, FL &middot; 20+ years</span>
+    <span class="eyebrow" style="color:var(--cyan);text-shadow:0 1px 10px rgba(0,0,0,.8)">Hialeah, FL &middot; 20+ years</span>
     <h1>Any foam.<em>Any size.</em></h1>
     <p class="kicker">Mattress <s>/</s> Furniture <s>/</s> Marine &mdash; quoted today.</p>
     <div class="hero-cta">
@@ -277,10 +277,10 @@ footer a{color:#c8ced6;text-decoration:none}
   </div>
 </section>
 
-<section id="industries">
+<section id="services">
   <div class="wrap">
     <span class="eyebrow">What we supply</span>
-    <h2>Pick your industry</h2>
+    <h2>Pick your service</h2>
     <p class="lead" style="margin-bottom:26px">High-density, memory and dry-fast foam, fabricated on state-of-the-art machinery to your exact measurements.</p>
     <div class="grid grid-3">
 
@@ -314,6 +314,38 @@ footer a{color:#c8ced6;text-decoration:none}
         </div>
       </article>
 
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Our happy customers</span>
+    <h2>What South Florida says</h2>
+  </div>
+  <div class="wrap">
+    <div class="rail" style="margin-top:20px">
+      <blockquote class="quote">
+        <div class="stars" aria-label="5 out of 5">
+          <svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg>
+        </div>
+        <p>&ldquo;I was desperate to find a great foam product and they guided me through many different types. They not only resolved my issue, they were extremely helpful.&rdquo;</p>
+        <b>John Williams</b><small>Mattress Warehouse Manager</small>
+      </blockquote>
+      <blockquote class="quote">
+        <div class="stars" aria-label="5 out of 5">
+          <svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg>
+        </div>
+        <p>&ldquo;I am an interior designer always looking for great seating cushion foam for clients. My order was ready by next day. Thank you Xpress Foam!&rdquo;</p>
+        <b>Alicia Potter</b><small>Interior Designer</small>
+      </blockquote>
+      <blockquote class="quote">
+        <div class="stars" aria-label="5 out of 5">
+          <svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg>
+        </div>
+        <p>&ldquo;I manage a mattress factory and I have been a faithful customer. Reliable, quick to serve, and they give me my quotes right away without long waits.&rdquo;</p>
+        <b>Edward B. Suarez</b><small>Mattress Industries Supervisor</small>
+      </blockquote>
     </div>
   </div>
 </section>
@@ -355,38 +387,6 @@ footer a{color:#c8ced6;text-decoration:none}
   </div>
 </section>
 
-<section class="soft">
-  <div class="wrap">
-    <span class="eyebrow">Our happy customers</span>
-    <h2>What South Florida says</h2>
-  </div>
-  <div class="wrap">
-    <div class="rail" style="margin-top:20px">
-      <blockquote class="quote">
-        <div class="stars" aria-label="5 out of 5">
-          <svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg>
-        </div>
-        <p>&ldquo;I was desperate to find a great foam product and they guided me through many different types. They not only resolved my issue, they were extremely helpful.&rdquo;</p>
-        <b>John Williams</b><small>Mattress Warehouse Manager</small>
-      </blockquote>
-      <blockquote class="quote">
-        <div class="stars" aria-label="5 out of 5">
-          <svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg>
-        </div>
-        <p>&ldquo;I am an interior designer always looking for great seating cushion foam for clients. My order was ready by next day. Thank you Xpress Foam!&rdquo;</p>
-        <b>Alicia Potter</b><small>Interior Designer</small>
-      </blockquote>
-      <blockquote class="quote">
-        <div class="stars" aria-label="5 out of 5">
-          <svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg><svg width="15" height="15"><use href="#i-star"/></svg>
-        </div>
-        <p>&ldquo;I manage a mattress factory and I have been a faithful customer. Reliable, quick to serve, and they give me my quotes right away without long waits.&rdquo;</p>
-        <b>Edward B. Suarez</b><small>Mattress Industries Supervisor</small>
-      </blockquote>
-    </div>
-  </div>
-</section>
-
 <section id="quote" class="formwrap">
   <div class="wrap">
     <div class="fgrid">
@@ -419,7 +419,7 @@ footer a{color:#c8ced6;text-decoration:none}
         <label for="e">Email</label>
         <input id="e" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@company.com">
 
-        <label for="i">What is it for? *</label>
+        <label for="i">Which service? *</label>
         <select id="i" name="industry" required>
           <option value="">Choose one&hellip;</option>
           <option>Mattress</option>
